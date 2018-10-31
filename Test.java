@@ -271,7 +271,7 @@ public class Test {//测试类
         second = input.nextInt();//秒
         System.out.println("请输入时间戳");
         stamp = input.nextLong();//时间戳
-        TimeStamps tim = new TimeStamps(year, month, day, hour, minute, second);
+        TimeStamps tim = new TimeStamps(year, month, day, hour, minute, second);//实例化对象
         System.out.println(year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second + "->" + tim.timeStamp(year, month, day, hour, minute, second, tim.getFlatYear(), tim.getLeapYear()));
         System.out.println(stamp + "->" + tim.stampTime(stamp, tim.getFlatYear(), tim.getLeapYear()));
 
